@@ -3,4 +3,4 @@ project(woafwoafchenil)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(woafwoafchenil main.cpp)
+add_executable(woafwoafchenil main.cpp Chien.h Chien.cpp Joueur.h Joueur.cpp)
