@@ -6,9 +6,8 @@
 #include "Chien.h"
 
 using namespace std;
-//Chien.cpp
 string Chien::tableauRace() {
-
+    string m_tableauRace[11];
     m_tableauRace[0] = "beagle";
     m_tableauRace[1] = "labrador";
     m_tableauRace[2] = "border collie";
@@ -21,7 +20,7 @@ string Chien::tableauRace() {
     m_tableauRace[9] = "terre-neuve";
     m_tableauRace[10] = "saint-bernard";
 
-    m_race = rand() % 11;
+    int m_race = rand() % 11;
 
     return m_tableauRace[m_race];
 }
@@ -55,7 +54,7 @@ string Chien::tableauNom() {
     tableauNom[24] = "Yoda";
     tableauNom[25] = "Zebulon";
 
-    m_nom = rand() % 26;
+    int m_nom = rand() % 26;
 
     return tableauNom[m_nom];
 }
@@ -90,12 +89,12 @@ string Chien::tableauMaitre() {
     tableauNom[24] = "Yves";
     tableauNom[25] = "Zac";
 
-    m_nom = rand() % 26;
+    int m_nom = rand() % 26;
 
     return tableauNom[m_nom];
 }
 
-int Chien::code() {
+int Chien::codeChien() {
     int codeInit = 0;
     int code = codeInit + 1;
     codeInit = code;
@@ -106,15 +105,18 @@ void Chien::creerChien() {
     m_nom = tableauNom();
     m_race = tableauRace();
     m_maitre = tableauMaitre();
-    m_code = Code();
-    m_satiete = rand() % 100;
-    m_proprete = rand() % 100;
-    m_bienEtre = rand() % 100;
-    m_obeissance = rand() % 100;
-    Chien *toutou = new Chien(this->m_nom,this->m_race,
-                              this->m_maitre, this->m_code,
-                              this->m_satiete, this->m_proprete,
-                              this->m_bienEtre, this->m_obeissance);
+    m_code = codeChien();
+}
+
+Chien::Chien() {
+        this->m_nom = tableauNom();
+        this->m_race = tableauRace();
+        this->m_code = m_code;
+        this->m_satiete = m_satiete;
+        this->m_proprete = m_proprete;
+        this->m_bienEtre = m_bienEtre;
+        this->m_maitre = tableauMaitre();
+        this->m_obeissance = m_obeissance;
 }
 
 void Chien::afficher() {
@@ -165,4 +167,5 @@ void Chien::jeu() {
     //  void dressage (assis, coucher, pas bouger, pas toucher)
     // danse avec ton chien
 }
+
 
