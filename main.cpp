@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//TODO : faire par rapport à méthode afficher de Chien
 int main() {
 
     srand(time(NULL));

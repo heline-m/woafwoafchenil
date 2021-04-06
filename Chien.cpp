@@ -129,6 +129,37 @@ void Chien::afficher() {
     cout << "maitre :" << "" << this->m_maitre << endl;
 }
 
+void Beagle::afficher() {
+    cout << "nom :" << "" << this->m_nom << endl;
+    cout << "code :" << "" << this->m_code << endl;
+    cout << "race :" << "" << this->m_race << endl;
+    cout << "satiete :" << "" << this->m_satiete << "%" << endl;
+    cout << "proprete :" << "" << this->m_proprete << "%" << endl;
+    cout << "bienEtre :" << "" << this->m_bienEtre << "%" << endl;
+    cout << "maitre :" << "" << this->m_maitre << endl;
+}
+
+void BorderCollie::afficher() {
+    cout << "nom :" << "" << this->m_nom << endl;
+    cout << "code :" << "" << this->m_code << endl;
+    cout << "race :" << "" << this->m_race << endl;
+    cout << "satiete :" << "" << this->m_satiete << "%" << endl;
+    cout << "proprete :" << "" << this->m_proprete << "%" << endl;
+    cout << "bienEtre :" << "" << this->m_bienEtre << "%" << endl;
+    cout << "maitre :" << "" << this->m_maitre << endl;
+}
+
+void Chihuaha::afficher() {
+    cout << "nom :" << "" << this->m_nom << endl;
+    cout << "code :" << "" << this->m_code << endl;
+    cout << "race :" << "" << this->m_race << endl;
+    cout << "satiete :" << "" << this->m_satiete << "%" << endl;
+    cout << "proprete :" << "" << this->m_proprete << "%" << endl;
+    cout << "bienEtre :" << "" << this->m_bienEtre << "%" << endl;
+    cout << "maitre :" << "" << this->m_maitre << endl;
+}
+
+// TODO : A mettre dans classe chenil
 void Chien::balle() {
     cout << " Vous lancez la balle" << endl;
     int resultat = rand() % 3;
