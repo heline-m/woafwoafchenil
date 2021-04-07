@@ -2,8 +2,6 @@
 #define WOAFWOAFCHENIL_JOUEUR_H
 
 
-
-//Joueur.h
 class Joueur{
 
 private:

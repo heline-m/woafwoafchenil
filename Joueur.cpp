@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Joueur.h"
-//Joueur.cpp
+
 using namespace std;
 
 Joueur::Joueur()
